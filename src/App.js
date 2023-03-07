@@ -8,7 +8,7 @@ function App() {
     <>
      <Navbar title= "TextUtils" aboutText="About TextUtils"></Navbar>
      <div className="container">
-    { /* <TextForm heading= " Enter the text to analyze"></TextForm> */}
+     <TextForm heading= " Enter the text to analyze"></TextForm> 
       <About></About>
      </div>
      
