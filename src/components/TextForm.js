@@ -24,7 +24,7 @@ export default function TextForm(props) {
                 <button className="btn btn-primary" onClick={handleUpClick}>Convert to uppercase</button>
             </div>
             
-        <div className="container">
+        <div className="container my-3">
             <h1>Your Text Summary</h1>
             <p>23234 words</p>
         </div>
