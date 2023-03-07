@@ -8,9 +8,12 @@ function App() {
   const [mode, setMode] = useState('light');
   const toggleMode=()=>{
     if (mode ==='light'){
-      setMode('dark')
+      setMode('dark');
+      document.body.style.backgroundColor = 'grey';
     }else{
-      setMode ('light')
+      setMode ('light');
+      document.body.style.backgroundColor = 'white';
+
     }
     
   }
@@ -18,7 +21,7 @@ function App() {
     <>
      <Navbar title= "TextUtils" mode={mode} aboutText="About TextUtils" toggleMode={toggleMode}></Navbar>
      <div className="container">
-     <TextForm heading= " Enter the text to analyze"></TextForm> 
+     <TextForm heading= " Enter the text to analyze" mode={mode}></TextForm> 
       <About></About>
      </div>
      
