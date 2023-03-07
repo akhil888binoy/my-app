@@ -26,7 +26,7 @@ export default function TextForm(props) {
             
         <div className="container my-3">
             <h1>Your Text Summary</h1>
-            <p>23234 words</p>
+            <p> {text.split(" ").length} words {text.length} characters</p>
         </div>
     
     </>
