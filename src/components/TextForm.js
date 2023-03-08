@@ -5,11 +5,13 @@ export default function TextForm(props) {
     console.log("Upper case was clicked");
     let newText= text.toUpperCase();
     setText(newText);
+    props.showAlert("converted to upper case", "success")
   }
   const handleLowClick =()=>{
     console.log("Upper case was clicked");
     let newText= text.toLowerCase();
     setText(newText);
+    props.showAlert("converted to lower case", "success")
   }
   const handleExtraSpaces=()=>{
     let newText = text.split(/[ ]+/);
