@@ -16,6 +16,7 @@ export default function TextForm(props) {
   const handleExtraSpaces=()=>{
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "))
+    props.showAlert("extra spaces removed", "success")
   }
   const handleOnChange =(event)=>{
     console.log("Onchanged");
